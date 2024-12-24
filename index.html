@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+
+    <main>
+        <section id="add-student-section">
+            <h2>Add New Student</h2>
+            <form id="student-form">
+                <input type="text" id="student-name" placeholder="Name" required>
+                <input type="number" id="student-id" placeholder="Student ID" required>
+                <input type="text" id="student-grade" placeholder="Grade" required>
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section id="view-student-section">
+            <h2>View All Students</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Grade</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="student-table-body">
+                    <!-- Student data will appear here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="search-section">
+            <h2>Search Students</h2>
+            <input type="text" id="search-query" placeholder="Search by name or ID">
+            <button id="search-button">Search</button>
+            <ul id="search-results">
+                <!-- Search results will be displayed here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Student Management System</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
